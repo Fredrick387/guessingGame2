@@ -1,0 +1,17 @@
+<h1>Take A Guess</h1>
+
+<fieldset>
+  <p>Welcome, Agent 0015. Your mission, if you choose to accept, will be to guess a number between 1 and 100. You get 10 tries, if you fail to guess correctly your computer will self destruct.</p>
+  <!-- changed guess to more intuitive guessInput -->
+  <input type="text" id="guessInput" placeholder=" Guess 1 thru 100 "><br>
+  <!-- button elements do not have a declarative type of "button"
+       also added the click handler to the guess button 
+  -->
+<button onclick="checkGuess();">Guess</button>
+<button onclick="clearFields();">Reset</button>    
+</fieldset>
+
+<fieldset>
+  <p>Your current status:</p>
+  <output id="status_output">You have yet to guess anything.</output>    
+</fieldset> 
